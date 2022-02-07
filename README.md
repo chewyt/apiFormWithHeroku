@@ -1,3 +1,10 @@
+#Test with the following websites:
+
+Server `https://chewyt-api.herokuapp.com/` No meaning to serve in browser
+Client `https://chewyt.github.io/apiFormWithHeroku/` via gitHub pages
+Client `https://regform.vercel.app/` via Vercel
+
+
 # RegForm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
