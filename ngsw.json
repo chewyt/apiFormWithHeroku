@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1644244595536,
+  "index": "/apiFormWithHeroku/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/apiFormWithHeroku/favicon.ico",
+        "/apiFormWithHeroku/index.html",
+        "/apiFormWithHeroku/main.807bc183a948ee81.js",
+        "/apiFormWithHeroku/manifest.webmanifest",
+        "/apiFormWithHeroku/polyfills.f84a3c279fb18e48.js",
+        "/apiFormWithHeroku/runtime.ea0fe833d868c19a.js",
+        "/apiFormWithHeroku/styles.69502ffbb2d876b9.css",
+        "/apiFormWithHeroku/styles.7f9188c5c66efec4.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/apiFormWithHeroku/assets/icons/icon-128x128.png",
+        "/apiFormWithHeroku/assets/icons/icon-144x144.png",
+        "/apiFormWithHeroku/assets/icons/icon-152x152.png",
+        "/apiFormWithHeroku/assets/icons/icon-192x192.png",
+        "/apiFormWithHeroku/assets/icons/icon-384x384.png",
+        "/apiFormWithHeroku/assets/icons/icon-512x512.png",
+        "/apiFormWithHeroku/assets/icons/icon-72x72.png",
+        "/apiFormWithHeroku/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/apiFormWithHeroku/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/apiFormWithHeroku/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/apiFormWithHeroku/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/apiFormWithHeroku/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/apiFormWithHeroku/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/apiFormWithHeroku/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/apiFormWithHeroku/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/apiFormWithHeroku/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/apiFormWithHeroku/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/apiFormWithHeroku/index.html": "4b4b0bc069f1ad35fd043cc961898673d5355235",
+    "/apiFormWithHeroku/main.807bc183a948ee81.js": "03a3f30b013432a86a465c21aeefcf817179299e",
+    "/apiFormWithHeroku/manifest.webmanifest": "1204d8c4f0c7a7bb469db522e5c7d6870aa8ddc7",
+    "/apiFormWithHeroku/polyfills.f84a3c279fb18e48.js": "b5a5945adf46402f201ebe26c4490f0ce2d89dfc",
+    "/apiFormWithHeroku/runtime.ea0fe833d868c19a.js": "90517960abfba84bf50c50650f5700a889f59f46",
+    "/apiFormWithHeroku/styles.69502ffbb2d876b9.css": "e753678644f25e3064365772c7523cc1986f11d0",
+    "/apiFormWithHeroku/styles.7f9188c5c66efec4.js": "053eb49cf3d9b78cfeb6822d7f1c6712b00d67ec"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
