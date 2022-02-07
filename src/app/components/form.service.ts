@@ -34,11 +34,12 @@ export class FormService{
     const url = ' https://chewyt-api.herokuapp.com/api/register'
     
     const headers = new HttpHeaders()
+    .set('content-type','application/json')
     .set('Access-Control-Allow-Origin','*');
 
 
     return lastValueFrom(
-      this.http.post<Registration>(url,register.toString(),{headers})
+      this.http.post<Registration>(url,register,{headers})
     )
 
   }
