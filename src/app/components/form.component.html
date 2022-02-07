@@ -1,0 +1,65 @@
+<br>
+
+<!-- <h3>Registration form</h3> -->
+
+<div class="example-form">
+    <form [formGroup]="form" >
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title style="font-size: 30px;">
+                    Registration Form
+                </mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-content>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input type="text" matInput formControlName="name" placeholder="Your name here">
+                    <mat-hint *ngIf="!form.get('name')!.valid">Hint: Please fill up properly</mat-hint>
+                    <mat-error *ngIf="form.get('name')!.hasError('minlength') && !form.get('name')!.hasError('required')">
+                      Name too short</mat-error>
+                    <mat-error *ngIf="form.get('name')!.hasError('required')">Name is <span>mandatory</span> field
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email"matInput formControlName="email" placeholder="Your Email here">
+                    <mat-hint *ngIf="!form.get('email')!.valid">Hint: Please fill up properly</mat-hint>
+                    <mat-error *ngIf="form.get('email')!.hasError('email') && !form.get('email')!.hasError('required')">
+                      Email invalid</mat-error>
+                    <mat-error *ngIf="form.get('email')!.hasError('required')">Email is <span>mandatory</span> field
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Phone no.</mat-label>
+                    <input type="text"matInput formControlName="phone" placeholder="Phone number here">
+                    <mat-hint *ngIf="!form.get('phone')!.valid">Hint: Please fill up properly</mat-hint>
+                    <mat-error *ngIf="form.get('phone')!.invalid && !form.get('phone')!.hasError('required')">
+                      Phone number should be 8 digits and more</mat-error>
+                    <mat-error *ngIf="form.get('phone')!.hasError('required')">Phone number is <span>mandatory</span> field
+                    </mat-error>
+                </mat-form-field>
+                <div class="d-flex justify-content-center">
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-75 mt-3"
+                        [disabled]="form.invalid"
+                        (click)="onSubmit()"
+                        >
+                        Submit (Xwwwurlencoded)
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button
+                        type="submit"
+                        class="btn btn-success w-75 mt-3"
+                        [disabled]="form.invalid"
+                        (click)="onSubmitJSON()"
+                        >
+                        Submit (JSON)
+                    </button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </form>
+</div>
